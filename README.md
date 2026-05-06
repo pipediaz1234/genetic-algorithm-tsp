@@ -8,19 +8,21 @@
 
 ## 🚀 Overview
 
-This project implements a **Genetic Algorithm (GA)** to solve the classic **Traveling Salesman Problem (TSP)** using a set of Colombian cities.
+This project presents the implementation of a **Genetic Algorithm (GA)** to solve the **Traveling Salesman Problem (TSP)**, a well-known combinatorial optimization problem.
 
-The goal is to determine the **optimal route with the minimum total distance**, visiting each city exactly once and returning to the starting point. The solution is achieved through evolutionary optimization techniques.
+Using a dataset of major Colombian cities, the algorithm searches for the **optimal route that minimizes total travel distance**, ensuring each city is visited exactly once before returning to the origin.
+
+The solution demonstrates the application of **evolutionary computation techniques** for solving complex optimization problems in a data-driven context.
 
 ---
 
 ## 🧠 Key Features
 
 * ✔ Genetic Algorithm implemented from scratch
-* ✔ Route optimization across multiple cities
-* ✔ Fitness function based on total distance
-* ✔ Evolution across generations
-* ✔ Visualization of convergence and optimal route
+* ✔ Fitness evaluation based on total route distance
+* ✔ Population-based optimization approach
+* ✔ Evolution across generations with convergence tracking
+* ✔ Visualization of optimization process and final solution
 
 ---
 
@@ -28,7 +30,7 @@ The goal is to determine the **optimal route with the minimum total distance**, 
 
 * **Language:** Python
 * **Libraries:** NumPy, Matplotlib
-* **Concepts:** Genetic Algorithms, Optimization, TSP
+* **Core Concepts:** Genetic Algorithms, Optimization, Heuristics, TSP
 
 ---
 
@@ -72,7 +74,7 @@ Run the Jupyter Notebook:
 jupyter notebook
 ```
 
-Then open:
+Open the main notebook:
 
 ```
 notebooks/tsp_genetic_algorithm.ipynb
@@ -82,14 +84,14 @@ notebooks/tsp_genetic_algorithm.ipynb
 
 ## 🔍 Methodology
 
-The Genetic Algorithm follows these steps:
+The implemented Genetic Algorithm follows a standard evolutionary pipeline:
 
-1. **Initialization:** Generate random routes (initial population)
-2. **Evaluation:** Compute total distance (fitness function)
-3. **Selection:** Choose best-performing individuals
-4. **Crossover:** Combine routes to generate offspring
-5. **Mutation:** Introduce diversity
-6. **Iteration:** Repeat until convergence
+1. **Initialization:** Generate a random population of candidate routes
+2. **Fitness Evaluation:** Compute total distance for each route
+3. **Selection:** Retain the best-performing individuals
+4. **Crossover:** Recombine routes to produce new offspring
+5. **Mutation:** Introduce randomness to maintain diversity
+6. **Iteration:** Repeat the process until convergence criteria are met
 
 ---
 
@@ -99,7 +101,7 @@ The Genetic Algorithm follows these steps:
 
 ![Evolution](images/evolution.png)
 
-📌 The algorithm converges around generation **13**, reaching a minimum distance of approximately:
+📌 The algorithm achieves convergence around **generation 13**, reaching a minimum distance of:
 
 **1807.23 km**
 
@@ -109,7 +111,7 @@ The Genetic Algorithm follows these steps:
 
 ![Optimal Route](images/ruta_optima.png)
 
-📍 Cities included in the route:
+📍 The optimized route includes:
 
 * Bogotá (Start/End)
 * Cali
@@ -124,25 +126,27 @@ The Genetic Algorithm follows these steps:
 
 ## 📈 Performance Analysis
 
-* Fast convergence in early generations
-* Stable solution after generation 13
-* Efficient reduction of total travel distance
+* Rapid convergence observed in early generations
+* Stability achieved after generation 13
+* Effective reduction in total route distance through evolutionary optimization
+* Demonstrates the efficiency of heuristic methods for NP-hard problems like TSP
 
 ---
 
 ## 💡 Future Improvements
 
-* 🔹 Increase population size
-* 🔹 Advanced crossover strategies
-* 🔹 Hybrid optimization (GA + Local Search)
-* 🔹 Interactive visualization
+* 🔹 Hyperparameter tuning (population size, mutation rate)
+* 🔹 Advanced crossover strategies (PMX, OX)
+* 🔹 Hybrid approaches (Genetic Algorithm + Local Search)
+* 🔹 Real-time or interactive visualizations
 
 ---
 
 ## 👨‍💻 Author
 
 **Andrés Felipe Díaz Campos**
-Systems Engineering Student | Backend & AI Developer
+Systems Engineering & Computer Science Student
+Data Analyst | AI Enthusiast
 
 🔗 LinkedIn:
 https://www.linkedin.com/in/andres-felipe-diaz-campos-398245207/
@@ -151,4 +155,4 @@ https://www.linkedin.com/in/andres-felipe-diaz-campos-398245207/
 
 ## 📄 License
 
-This project is intended for academic and portfolio purposes.
+This project is developed for academic and professional portfolio purposes.
